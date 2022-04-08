@@ -41,6 +41,7 @@
     "lint-staged": "^12.3.7",
     "postcss-scss": "^4.0.3",
     "prettier": "2.6.2",
+    "react-app-rewired": "^2.2.1",
     "sass": "^1.50.0",
     "stylelint": "^14.6.1",
     "stylelint-config-prettier-scss": "^0.0.1",
@@ -49,10 +50,10 @@
     "stylelint-scss": "^4.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
     "prepare": "husky install",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,json}\"",
     "prettier:fix": "prettier --write",

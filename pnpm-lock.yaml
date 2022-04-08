@@ -19,6 +19,7 @@ specifiers:
   eslint-plugin-react-hooks: ^4.4.0
   husky: ^7.0.0
   lint-staged: ^12.3.7
+  normalize.css: ^8.0.1
   postcss-scss: ^4.0.3
   prettier: 2.6.2
   react: ^18.0.0
@@ -37,6 +38,7 @@ dependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4_react-dom@18.0.0+react@18.0.0
   '@testing-library/user-event': 13.5.0
+  normalize.css: 8.0.1
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
   react-scripts: 5.0.0_react@18.0.0+sass@1.50.0
@@ -6624,6 +6626,10 @@ packages:
   /normalize-url/6.1.0:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
+    dev: false
+
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
     dev: false
 
   /npm-run-path/4.0.1:

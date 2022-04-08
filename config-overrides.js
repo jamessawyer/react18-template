@@ -1,5 +1,8 @@
 /* eslint-disable global-require */
-const { override } = require('customize-cra')
+const { override, addWebpackAlias } = require('customize-cra')
+const path = require('path')
+
+const resolveAlias = (dir) => path.join(__dirname, '.', dir)
 
 // fix
 // https://github.com/formatjs/formatjs/issues/1395#issuecomment-518823361
@@ -13,5 +16,14 @@ const supportMjs = () => (webpackConfig) => {
 }
 
 module.exports = {
-  webpack: override(supportMjs())
+  webpack(config, env) {
+    supportMjs()
+    override(
+      addWebpackAlias({
+        '@': resolveAlias('src')
+      })
+    )
+    require('react-app-rewire-postcss')(config, true)
+    return config
+  }
 }

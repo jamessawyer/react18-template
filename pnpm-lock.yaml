@@ -8,6 +8,7 @@ specifiers:
   '@testing-library/react': ^12.1.4
   '@testing-library/user-event': ^13.5.0
   autoprefixer: ^9
+  '@trivago/prettier-plugin-sort-imports': ^3.2.0
   customize-cra: ^1.0.0
   eslint: ^8.12.0
   eslint-config-airbnb: ^19.0.4
@@ -51,7 +52,11 @@ devDependencies:
   '@babel/core': 7.17.9
   '@babel/eslint-parser': 7.17.0_@babel+core@7.17.9+eslint@8.12.0
   '@babel/preset-react': 7.16.7_@babel+core@7.17.9
+<<<<<<< HEAD
   autoprefixer: 9.8.8
+=======
+  '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.6.2
+>>>>>>> 3801552 (feat: 添加prettier-plugin-sort-imports插件,用于引入排序)
   customize-cra: 1.0.0
   eslint: 8.12.0
   eslint-config-airbnb: 19.0.4_7ff9fbf54c79caee2723c062ec735a90
@@ -106,6 +111,30 @@ packages:
     resolution: {integrity: sha512-p8pdE6j0a29TNGebNm7NzYZWB3xVZJBZ7XGs42uAKzQo8VQ3F0By/cQCtUEABwIqw5zo6WA4NbmxsfzADzMKnQ==}
     engines: {node: '>=6.9.0'}
 
+  /@babel/core/7.13.10:
+    resolution: {integrity: sha512-bfIYcT0BdKeAZrovpMqX2Mx5NrgAckGbwT982AkdS5GNfn3KMGiprlBAtmBcFZRUmpaufS6WZFP8trvx8ptFDw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/code-frame': 7.16.7
+      '@babel/generator': 7.17.9
+      '@babel/helper-compilation-targets': 7.17.7_@babel+core@7.13.10
+      '@babel/helper-module-transforms': 7.17.7
+      '@babel/helpers': 7.17.9
+      '@babel/parser': 7.17.9
+      '@babel/template': 7.16.7
+      '@babel/traverse': 7.17.9
+      '@babel/types': 7.17.0
+      convert-source-map: 1.8.0
+      debug: 4.3.4
+      gensync: 1.0.0-beta.2
+      json5: 2.2.1
+      lodash: 4.17.21
+      semver: 6.3.0
+      source-map: 0.5.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@babel/core/7.17.9:
     resolution: {integrity: sha512-5ug+SfZCpDAkVp9SFIZAzlW18rlzsOcJGaetCjkySnrXXDUw9AR8cDUm1iByTmdWM6yxX6/zycaV76w3YTF2gw==}
     engines: {node: '>=6.9.0'}
@@ -141,6 +170,14 @@ packages:
       eslint-visitor-keys: 2.1.0
       semver: 6.3.0
 
+  /@babel/generator/7.13.9:
+    resolution: {integrity: sha512-mHOOmY0Axl/JCTkxTU6Lf5sWOg/v8nUa+Xkt4zMTftX0wqmb6Sh7J8gvcehBw7q0AhrhAR+FDacKjCZ2X8K+Sw==}
+    dependencies:
+      '@babel/types': 7.17.0
+      jsesc: 2.5.2
+      source-map: 0.5.7
+    dev: true
+
   /@babel/generator/7.17.9:
     resolution: {integrity: sha512-rAdDousTwxbIxbz5I7GEQ3lUip+xVCXooZNbsydCWs3xA7ZsYOv+CFRdzGxRX78BmQHu9B1Eso59AOZQOJDEdQ==}
     engines: {node: '>=6.9.0'}
@@ -162,6 +199,19 @@ packages:
       '@babel/helper-explode-assignable-expression': 7.16.7
       '@babel/types': 7.17.0
     dev: false
+
+  /@babel/helper-compilation-targets/7.17.7_@babel+core@7.13.10:
+    resolution: {integrity: sha512-UFzlz2jjd8kroj0hmCFV5zr+tQPi1dpC2cRsDV/3IEW8bJfCPrPpmcSN6ZS8RqIq4LXcmpipCQFPddyFA5Yc7w==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/compat-data': 7.17.7
+      '@babel/core': 7.13.10
+      '@babel/helper-validator-option': 7.16.7
+      browserslist: 4.20.2
+      semver: 6.3.0
+    dev: true
 
   /@babel/helper-compilation-targets/7.17.7_@babel+core@7.17.9:
     resolution: {integrity: sha512-UFzlz2jjd8kroj0hmCFV5zr+tQPi1dpC2cRsDV/3IEW8bJfCPrPpmcSN6ZS8RqIq4LXcmpipCQFPddyFA5Yc7w==}
@@ -367,6 +417,12 @@ packages:
       '@babel/helper-validator-identifier': 7.16.7
       chalk: 2.4.2
       js-tokens: 4.0.0
+
+  /@babel/parser/7.14.6:
+    resolution: {integrity: sha512-oG0ej7efjEXxb4UgE+klVx+3j4MVo+A2vCzm7OUN4CLo6WhQ+vSOD2yJ8m7B+DghObxtLxt3EfgMWpq+AsWehQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+    dev: true
 
   /@babel/parser/7.17.9:
     resolution: {integrity: sha512-vqUSBLP8dQHFPdPi9bc5GK9vRkYHJ49fsZdtoJ8EQ8ibpwk5rPKfvNIwChB0KVXcIjcepEBBd2VHC5r9Gy8ueg==}
@@ -1381,6 +1437,22 @@ packages:
       '@babel/parser': 7.17.9
       '@babel/types': 7.17.0
 
+  /@babel/traverse/7.13.0:
+    resolution: {integrity: sha512-xys5xi5JEhzC3RzEmSGrs/b3pJW/o87SypZ+G/PhaE7uqVQNv/jlmVIBXuoh5atqQ434LfXV+sf23Oxj0bchJQ==}
+    dependencies:
+      '@babel/code-frame': 7.16.7
+      '@babel/generator': 7.17.9
+      '@babel/helper-function-name': 7.17.9
+      '@babel/helper-split-export-declaration': 7.16.7
+      '@babel/parser': 7.17.9
+      '@babel/types': 7.17.0
+      debug: 4.3.4
+      globals: 11.12.0
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@babel/traverse/7.17.9:
     resolution: {integrity: sha512-PQO8sDIJ8SIwipTPiR71kJQCKQYB5NGImbOviK8K+kg5xkNSYXLBupuX9QhatFowrsvo9Hj8WgArg3W7ijNAQw==}
     engines: {node: '>=6.9.0'}
@@ -1397,6 +1469,14 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
+
+  /@babel/types/7.13.0:
+    resolution: {integrity: sha512-hE+HE8rnG1Z6Wzo+MhaKE5lM5eMx71T4EHJgku2E3xIfaULhDcxiiRxUYgwX8qwP1BBSlag+TdGOt6JAidIZTA==}
+    dependencies:
+      '@babel/helper-validator-identifier': 7.16.7
+      lodash: 4.17.21
+      to-fast-properties: 2.0.0
+    dev: true
 
   /@babel/types/7.17.0:
     resolution: {integrity: sha512-TmKSNO4D5rzhL5bjWFcVHHLETzfQ/AmbKpKPOSjlP0WoHZ6L911fgoOKY4Alp/emzG4cHJdyN49zpgkbXFEHHw==}
@@ -2051,6 +2131,23 @@ packages:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
     dev: false
+
+  /@trivago/prettier-plugin-sort-imports/3.2.0_prettier@2.6.2:
+    resolution: {integrity: sha512-DnwLe+z8t/dZX5xBbYZV1+C5STkyK/P6SSq3Nk6NXlJZsgvDZX2eN4ND7bMFgGV/NL/YChWzcNf6ziGba1ktQQ==}
+    peerDependencies:
+      prettier: 2.x
+    dependencies:
+      '@babel/core': 7.13.10
+      '@babel/generator': 7.13.9
+      '@babel/parser': 7.14.6
+      '@babel/traverse': 7.13.0
+      '@babel/types': 7.13.0
+      javascript-natural-sort: 0.7.1
+      lodash: 4.17.21
+      prettier: 2.6.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -5624,6 +5721,10 @@ packages:
       filelist: 1.0.2
       minimatch: 3.1.2
     dev: false
+
+  /javascript-natural-sort/0.7.1:
+    resolution: {integrity: sha1-+eIwPUUH9tdDVac2ZNFED7Wg71k=}
+    dev: true
 
   /jest-changed-files/27.5.1:
     resolution: {integrity: sha512-buBLMiByfWGCoMsLLzGUUSpAmIAGnbR2KJoMN10ziLhOLvP4e0SlypHnAel8iqQXTrcbmfEY9sSqae5sgUsTvw==}

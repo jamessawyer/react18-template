@@ -10,17 +10,17 @@
     "airbnb",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
+    "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
-    "prettier",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "jsx-a11y", "jest", "prettier"],
+  "plugins": ["react", "jsx-a11y", "jest"],
   "rules": {
-    "prettier/prettier": ["error"],
     "no-console": "off",
-    "import/no-extraneous-dependencies": 0,
+    "import/no-extraneous-dependencies": 2,
+    "import/namespace": 0,
+    "import/no-named-as-default": 0,
+    "import/default": 0,
     "react/jsx-filename-extension": [
       "warn",
       {
@@ -29,9 +29,6 @@
     ],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "import/namespace": 0,
-    "import/no-named-as-default": 0,
-    "import/default": 0,
     "no-unused-vars": 1,
     "no-plusplus": 0
   },

@@ -39,6 +39,7 @@ dependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4_react-dom@18.0.0+react@18.0.0
   '@testing-library/user-event': 13.5.0
+  customize-cra: 1.0.0
   normalize.css: 8.0.1
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
@@ -50,7 +51,6 @@ devDependencies:
   '@babel/eslint-parser': 7.17.0_@babel+core@7.17.9+eslint@8.12.0
   '@babel/preset-react': 7.16.7_@babel+core@7.17.9
   '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.6.2
-  customize-cra: 1.0.0
   eslint: 8.12.0
   eslint-config-airbnb: 19.0.4_7ff9fbf54c79caee2723c062ec735a90
   eslint-config-prettier: 8.5.0_eslint@8.12.0
@@ -3861,7 +3861,7 @@ packages:
     resolution: {integrity: sha512-DbtaLuy59224U+xCiukkxSq8clq++MOtJ1Et7LED1fLszWe88EoblEYFBJ895sB1mC6B4uu3xPT/IjClELhMbA==}
     dependencies:
       lodash.flow: 3.5.0
-    dev: true
+    dev: false
 
   /damerau-levenshtein/1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -6410,7 +6410,7 @@ packages:
 
   /lodash.flow/3.5.0:
     resolution: {integrity: sha1-h79AKSuM+D5OjOGjrkIJ4gBxZ1o=}
-    dev: true
+    dev: false
 
   /lodash.memoize/4.1.2:
     resolution: {integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=}

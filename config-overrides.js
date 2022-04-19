@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 const { override } = require('customize-cra')
 
 // fix
